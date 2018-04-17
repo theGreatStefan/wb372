@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\begin{document}
+\tikzstyle{c} = [draw,circle,fill=blue,minimum size=1cm, node distance=3cm]
+\tikzstyle{r} = [draw,rectangle,minimum size=1cm, node distance=3cm] 
+\tikzstyle{e} = [->,>=latex]
+\tikzstyle{l} = [above]
+\tikzstyle{a} = [right]
+
+\begin{tikzpicture}[scale=0.5]
+
+	\node[c] (A) at (0,0) {Action required?};
+	\node[c, right of=A] (B) {Delete or Archive};
+	\node[c, below of=A] (C) {Can I delegate it?};
+	\node[r, right of=C] (D) {Delegate};
+	\node[r, right of=D] (E) {Need to follow up?};
+	\node[r, below of=C] (F) {Should I do it now?};
+	\node[r, below of=D] (G) {Defer};
+	\node[r, below of=G] (H) {Do};
+
+	\draw[e] (A) -- node[l] {$No$} (B);
+	\draw[e] (A) -- node[a] {$Yes$}(C);
+	\draw[e] (C) -- node[l] {$Yes$} (D);
+	\draw[e] (D) -- (E);
+	\draw[e] (E) -- node[a] {$No$} (B);
+	\draw[e] (C) -- node[a] {$No$} (F);
+	\draw[e] (F) -- node[l] {$No$} (G);
+	\draw[e] (E) -- node[l] {$Yes$} (G);
+
+	
+	
+
+\end{tikzpicture}
+\end{document}
