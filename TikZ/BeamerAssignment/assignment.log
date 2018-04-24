@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.2.10)  24 APR 2018 22:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.2.10)  24 APR 2018 23:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**test.tex
-(./test.tex
+**assignment.tex
+(./assignment.tex
 LaTeX2e <2017-04-15>
 Babel <3.12> and hyphenation patterns for 3 language(s) loaded.
 
@@ -12,19 +12,19 @@ Babel <3.12> and hyphenation patterns for 3 language(s) loaded.
 Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: cls)
 
-Enter file name: X
+Enter file name: x
 
  )
 (\end occurred when \ifx on line 2 was incomplete)
 (\end occurred when \ifx on line 2 was incomplete) 
 Here is how much of TeX's memory you used:
  11 strings out of 494931
- 183 string characters out of 6180851
+ 207 string characters out of 6180851
  45736 words of memory out of 5000000
  3417 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 10i,0n,7p,46b,8s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 10i,0n,7p,52b,8s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 No pages of output.
 PDF statistics:
