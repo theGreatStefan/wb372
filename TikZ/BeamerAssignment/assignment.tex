@@ -27,7 +27,8 @@
 \begin{frame}
 	The name "organic" is a historical name from the 19th century.
 	%\vspace
-	\\
+	\newline
+	\newline
 	People believed that only living things could make organic compounds and "dead" things (such as minerals) 
 	could make inorganic compounds. However, Friedrich Wöhler proved this wrong by synthesizing urea, a well-known 
 	organic compound.
@@ -79,11 +80,22 @@
 \begin{frame}
 	%the TikZ diagram here
 	\begin{tikzpicture}[scale=1]
-	\draw[help lines] (0,0) grid (12,9);
+	%\draw[help lines] (0,0) grid (12,9);
 
-	\node[draw,minimum size=1cm, node distance=3cm] (A) at (6,8.5) {Adaptee};
+	\node[draw,minimum size=1cm, node distance=3cm] (Adaptee) at (6,8.5) {Adaptee};
 	\draw (5.2,8.3) -- (6.8,8.3);
-	\node[draw,minimum size=0.5cm, node distance=2cm] (B) at (6,7.8) {+methodB()};
+	\node[draw,minimum size=0.5cm, node distance=2cm] (methB) at (6,7.8) {+methodB()};
+	\node[draw,minimum size=1cm, node distance=3cm] (Client) at (1,5) {Client};
+	\node[draw,minimum size=1cm, node distance=3cm] (Adaptor) at (6,5) {Adaptor};
+	\node[draw,minimum size=1cm, node distance=3cm] (AdaptorA) at (4,2) {Adaptor.methodA()};
+	\node[draw,minimum size=1cm, node distance=3cm] (AdaptorB) at (9,2) {Adaptor.methodB()};
+
+	\draw[->,>=latex] (Adaptor) -- (methB);
+	\draw[->,>=latex] (Client) -- (Adaptor);
+	\draw[->,>=latex] (Client) to[bend left] (AdaptorA);
+	\draw[->,>=latex] (Adaptor) to[bend left] (AdaptorB);
+
+
 	\end{tikzpicture}
 
 \end{frame}
@@ -96,7 +108,9 @@
 	natural and changing the molecule in a small way, such as making glycerin from vegetable oils. 
 	Other compounds are synthesized in long, complicated reactions with many steps. Plastics are 
 	sometimes mostly natural, and other kinds are manufactured.
-	\\
+	\newline
+	\newline
+
 	Since a compound is often first discovered in nature instead of being made on purpose in a lab, 
 	people may know the compound exists, and even know what it does sometimes, but not know exactly 
 	what atoms it is made of and how it is arranged.

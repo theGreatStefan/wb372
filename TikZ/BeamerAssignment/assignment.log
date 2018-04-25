@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.6)  25 APR 2018 13:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.6)  25 APR 2018 14:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1057,11 +1057,11 @@ Overfull \hbox (9.34665pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `assignment.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 129.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 129.
  (./assignment.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 115.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 129.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 129.
 Package rerunfilecheck Info: File `assignment.out' has not changed.
 (rerunfilecheck)             Checksum: 3BC4F99DB2927AF1B3D8FCD30F424470;235.
 
@@ -1069,20 +1069,20 @@ Package rerunfilecheck Info: File `assignment.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 115.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 129.
  ) 
 Here is how much of TeX's memory you used:
- 19722 strings out of 493029
- 392435 string characters out of 6136234
+ 19755 strings out of 493029
+ 393021 string characters out of 6136234
  458616 words of memory out of 5000000
- 22802 multiletter control sequences out of 15000+600000
+ 22835 multiletter control sequences out of 15000+600000
  5759 words of font info for 21 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,16n,60p,409b,590s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,60p,409b,598s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on assignment.pdf (9 pages, 56245 bytes).
+Output written on assignment.pdf (9 pages, 56507 bytes).
 PDF statistics:
  311 PDF objects out of 1000 (max. 8388607)
  281 compressed objects within 3 object streams

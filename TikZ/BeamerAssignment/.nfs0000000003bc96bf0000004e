@@ -1,5 +1,7 @@
 \documentclass{beamer}
 \usetheme{Boadilla}
+\usepackage{tikz}
+\usetikzlibrary{calc}
 
 
 \title{Organic compound}
@@ -24,7 +26,9 @@
 \section{History}
 \begin{frame}
 	The name "organic" is a historical name from the 19th century.
-	\n \n
+	%\vspace
+	\newline
+	\newline
 	People believed that only living things could make organic compounds and "dead" things (such as minerals) 
 	could make inorganic compounds. However, Friedrich Wöhler proved this wrong by synthesizing urea, a well-known 
 	organic compound.
@@ -32,18 +36,18 @@
 %\pause
 \begin{frame}
 	There are natural organic compounds, and synthetic ones. Their structure may be described by using names, 
-	and making diagrams.\n
-	\n
+	and making diagrams.
+	%\space
 	\begin{block}
 		One way of showing the molecule is by drawing its structural formula. Because molecules can have 
 		complicated structures, people have made ways to show them in simple language. One way is to use line 
 		diagrams. Each atom is shown by a letter, and connected by a line to each atom with which it is has a 
 		covalent bond. One line means a single bond, two lines means a double bond and so on.
 	\end{block}
-	\n
+	%\vspace
 	Because there is in an infinite number of possible organic compounds, language is needed to give a 
 	unique name to each one. The International Union of Pure and Applied Chemistry, or IUPAC, made a system for 
-	doing this.\n
+	doing this.\vline
 	Although an IUPAC name makes every single possible molecule unique, the names are often long and complicated, 
 	so in everyday life, trivial names--unofficial but widely understood names--are used, such as the trivial 
 	names Paracetamol, Tylenol, and Acetaminophen, which are used for a compound whose IUPAC name is 
@@ -56,6 +60,7 @@
 \begin{frame}
 	\begin{figure}
 	%Here lies the first thingemabob
+
 	\end{figure}
 
 \end{frame}
@@ -74,6 +79,25 @@
 \section{Diagram}
 \begin{frame}
 	%the TikZ diagram here
+	\begin{tikzpicture}[scale=1]
+	\draw[help lines] (0,0) grid (12,9);
+
+	\node[draw,minimum size=1cm, node distance=3cm] (Adaptee) at (6,8.5) {Adaptee};
+	\draw (5.2,8.3) -- (6.8,8.3);
+	\node[draw,minimum size=0.5cm, node distance=2cm] (methB) at (6,7.8) {+methodB()};
+	\node[draw,minimum size=1cm, node distance=3cm] (Client) at (1,5) {Client};
+	\node[draw,minimum size=1cm, node distance=3cm] (Adaptor) at (6,5) {Adaptor};
+	\node[draw,minimum size=1cm, node distance=3cm] (Adaptor.A) at (2,2) {Adaptor.methodA()};
+	\node[draw,minimum size=1cm, node distance=3cm] (Adaptor.B) at (7,2) {Adaptor.methodB()};
+
+	\draw[->,>=latex] (Adaptor) -- (methB);
+	\draw[->,>=latex] (Client) -- (Adaptor);
+	\draw[->,>=latex] (Client) to[bend left] (Adaptor.A);
+	\draw[->,>=latex] (Adaptor) -- (Adaptor.B);
+
+
+	\end{tikzpicture}
+
 \end{frame}
 
 
@@ -84,7 +108,9 @@
 	natural and changing the molecule in a small way, such as making glycerin from vegetable oils. 
 	Other compounds are synthesized in long, complicated reactions with many steps. Plastics are 
 	sometimes mostly natural, and other kinds are manufactured.
-	\n\n
+	\newline
+	\newline
+
 	Since a compound is often first discovered in nature instead of being made on purpose in a lab, 
 	people may know the compound exists, and even know what it does sometimes, but not know exactly 
 	what atoms it is made of and how it is arranged.
