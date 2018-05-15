@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{History}{3}{0}{1}
+\beamer@sectionintoc {2}{Natural Compounds}{5}{0}{2}
+\beamer@sectionintoc {3}{Diagram}{7}{0}{3}
+\beamer@sectionintoc {4}{Synthetic compounds}{8}{0}{4}
+\beamer@sectionintoc {5}{Evaluation}{9}{0}{5}
