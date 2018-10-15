@@ -57,7 +57,7 @@ def is_email_addr(str):
 
 def is_ssn(str):
 	'''Question 7'''
-	pattern = re.compile('^(?!219-09-9999|078-05-1120)(?!666|000|9\d{2})d{3}-(?!00)\d{2}-(?!0{4})\d{4}$')
+	pattern = re.compile('^(?!219-09-9999|078-05-1120)(?!666|000|9\d{2})\d{3}-(?!00)\d{2}-(?!0{4})\d{4}$')
 	if pattern.match(str):
 		return True
 	else:
